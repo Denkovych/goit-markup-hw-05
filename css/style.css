@@ -78,16 +78,21 @@ img {
 .mail:focus,
 .tel:focus {
   color: #2196f3;
+
+  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail:hover .navigation-contacts-icon,
 .tel:hover .navigation-contacts-icon {
   fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:focus,
 button:hover {
   color: #ffffff;
   background: #2196f3;
+
+  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-a-service {
@@ -132,6 +137,7 @@ button:hover {
 .work-list-li:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 .all {
   width: 73px;
@@ -438,6 +444,8 @@ button:hover {
 
 .our-team-social-link:hover {
   background-color: #2196f3;
+
+  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-social-link:hover .our-team-social-icon {
@@ -472,6 +480,8 @@ button:hover {
   border: 1px solid #2196f3;
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-item-link:hover .client-icon {
   fill: #2196f3;
@@ -524,6 +534,7 @@ button:hover {
 .portfolio-galery-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-galery-item:not(:nth-child(3n)) {
@@ -532,9 +543,40 @@ button:hover {
 .portfolio-galery-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-.portfolio-img {
+/*.portfolio-img {
+  margin-bottom: 20px;
+}*/
+.portfolio-overlay {
+  position: relative;
+  display: flex;
+
+  overflow: hidden;
+
   margin-bottom: 20px;
 }
+.portfolio-overlay-text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  padding: 63px 24px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translatex(-100%);
+  transition: transform 250ms ease;
+}
+.portfolio-galery-item:hover .portfolio-overlay-text {
+  transform: translate(0%);
+}
+
 .portfolio-work {
   margin-bottom: 4px;
   width: 322px;
@@ -586,6 +628,7 @@ button:hover {
 }
 .footer-social-link:hover {
   background-color: #2196f3;
+  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-icon {
   fill: #ffffff;
