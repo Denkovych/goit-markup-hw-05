@@ -300,6 +300,7 @@ button:hover {
 }
 .our-work-item {
   margin-right: 30px;
+  position: relative;
 }
 .our-work-item:last-child {
   margin-right: 0;
@@ -327,6 +328,28 @@ button:hover {
 }
 .our-team-position {
   text-align: center;
+}
+.our-work-box-foto-name {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+}
+.our-work-foto-name {
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .home-title {
   font-weight: bold;
