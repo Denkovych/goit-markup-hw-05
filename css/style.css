@@ -45,6 +45,27 @@ img {
   text-decoration: none;
 }
 
+.link {
+  position: relative;
+}
+.link.navigation-link:hover::after {
+  opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link.navigation-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+
+  border: 4px solid;
+  color: #2196f3;
+  border-radius: 2px;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+}
 .link-logo {
   font-family: "Raleway", sans-serif;
 }
@@ -79,12 +100,14 @@ img {
 .tel:focus {
   color: #2196f3;
 
-  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail:hover .navigation-contacts-icon,
 .tel:hover .navigation-contacts-icon {
   fill: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:focus,
@@ -92,7 +115,8 @@ button:hover {
   color: #ffffff;
   background: #2196f3;
 
-  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-a-service {
@@ -137,7 +161,8 @@ button:hover {
 .work-list-li:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .all {
   width: 73px;
@@ -445,7 +470,8 @@ button:hover {
 .our-team-social-link:hover {
   background-color: #2196f3;
 
-  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-social-link:hover .our-team-social-icon {
@@ -481,7 +507,8 @@ button:hover {
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-item-link:hover .client-icon {
   fill: #2196f3;
@@ -534,7 +561,8 @@ button:hover {
 .portfolio-galery-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-galery-item:not(:nth-child(3n)) {
@@ -570,8 +598,9 @@ button:hover {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translatex(-100%);
-  transition: transform 250ms ease;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-galery-item:hover .portfolio-overlay-text {
   transform: translate(0%);
@@ -628,7 +657,8 @@ button:hover {
 }
 .footer-social-link:hover {
   background-color: #2196f3;
-  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-icon {
   fill: #ffffff;
