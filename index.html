@@ -57,7 +57,7 @@
 <section class="hero " >
     <div class="container">
         <h1 class="home-title"> ЭФФЕКТИВНОЕ РЕШЕНИЕ <br> ДЛЯ ВАШЕГО БИЗНЕСА </h1>
-        <button type="button" class="order-a-service"> Заказать услугу</button>
+        <button type="button" class="order-a-service" data-modal-open> Заказать услугу</button>
     </div>
 </section>
 <!-- Переваги-->
@@ -443,8 +443,18 @@
     </section>    
 
 </footer>
-
-
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <div>
+        <button class="modal-close" data-modal-close>
+            <svg width="30" height="30">
+                <use href="images/social/close! (1).svg"></use>
+            </svg>
+        </button>
+        </div>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
