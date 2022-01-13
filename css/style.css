@@ -581,6 +581,7 @@ button:hover {
   overflow: hidden;
 
   margin-bottom: 20px;
+  top: -1px;
 }
 .portfolio-overlay-text {
   font-weight: normal;
@@ -700,4 +701,15 @@ button:hover {
   height: 581px;
 
   background-color: rgba(245, 244, 250);
+}
+.modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.modal-close-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
